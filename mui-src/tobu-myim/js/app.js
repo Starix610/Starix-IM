@@ -12,7 +12,7 @@ window.app = {
 	 */
 //	imgServerUrl: 'http://192.168.43.47:8080/images/',
 //	imgServerUrl: 'http://192.168.0.104:8080/images/',
-	imgServerUrl: 'http://139.196.102.109/myim/images/',
+	imgServerUrl: 'http://****/myim/images/',
 	
 	
 	/**
@@ -20,7 +20,7 @@ window.app = {
 	 */
 //	nettyServerUrl: 'ws://192.168.43.47:8088/ws',
 //	nettyServerUrl: 'ws://192.168.0.104:8088/ws',
-	nettyServerUrl: 'ws://139.196.102.109:8089/ws',
+	nettyServerUrl: 'ws://****:8089/ws',
 	
 	
 	/**
