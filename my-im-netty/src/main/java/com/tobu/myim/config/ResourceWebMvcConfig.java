@@ -16,6 +16,11 @@ public class ResourceWebMvcConfig implements WebMvcConfigurer {
     @Value("${image.qrcode.url.prefix}")
     private String qrcodeUrlPrefix;
 
+    
+    /**
+    * 本地测试时使用的配置，用于上传的图片资源的访问
+    */
+    
 //    @Override
 //    public void addResourceHandlers(ResourceHandlerRegistry registry) {
 //        registry.addResourceHandler("/images/"+faceUrlPrefix+"**").addResourceLocations("file:"+faceUploadPath);
