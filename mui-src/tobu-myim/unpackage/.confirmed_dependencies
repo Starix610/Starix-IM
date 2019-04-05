@@ -1,0 +1,92 @@
+{
+  "index.html": {
+    "refer": [
+      "my-im-chatlist.html",
+      "my-im-me.html",
+      "my-im-discover.html",
+      "my-im-contact.html"
+    ],
+    "resources": [
+      "my-im-chatlist.html",
+      "css/mui.min.css",
+      "css/header.css"
+    ]
+  },
+  "login.html": {
+    "refer": [
+      "login.html",
+      "index.html",
+      "my-im-chatlist.html"
+    ],
+    "resources": [
+      "image/loginhead.jpg",
+      "css/registLogin/util.css",
+      "css/registLogin/main.css"
+    ]
+  },
+  "my-im-me.html": {
+    "refer": [
+      "myface.html",
+      "mynickname.html",
+      "myQRCode.html",
+      "login.html"
+    ],
+    "resources": [
+      "image/head1.png",
+      "image/qrcode.png"
+    ]
+  },
+  "myface.html": {
+    "refer": [
+      "plugin/v3.1.6/myface-uploader.html"
+    ],
+    "resources": []
+  },
+  "plugin/v3.1.6/myface-uploader.html": {
+    "refer": [
+      "my-im-discover.html",
+      "plugin/v3.1.6/index1.html"
+    ],
+    "resources": []
+  },
+  "my-im-discover.html": {
+    "refer": [
+      "searchFriends.html",
+      "scanme.html"
+    ],
+    "resources": [
+      "image/friends.png",
+      "image/scanscan.png"
+    ]
+  },
+  "searchFriends.html": {
+    "refer": [
+      "searchFriendsResult.html"
+    ],
+    "resources": []
+  },
+  "scanme.html": {
+    "refer": [
+      "searchFriendsResult.html"
+    ],
+    "resources": []
+  },
+  "my-im-contact.html": {
+    "refer": [
+      "chatting.html"
+    ],
+    "resources": [
+      "image/head1.png",
+      "css/mui.indexedlist.css",
+      "css/mui.min.css"
+    ]
+  },
+  "my-im-chatlist.html": {
+    "refer": [
+      "chatting.html"
+    ],
+    "resources": [
+      "css/mui.min.css"
+    ]
+  }
+}
