@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tobu.myim.mapper.MyFriendsMapper" >
+  <resultMap id="BaseResultMap" type="com.tobu.myim.pojo.MyFriends" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="my_user_id" property="myUserId" jdbcType="VARCHAR" />
+    <result column="my_friend_user_id" property="myFriendUserId" jdbcType="VARCHAR" />
+  </resultMap>
+
+
+
+  <select id="queryMyFriends" parameterType="String" resultType="com.tobu.myim.pojo.vo.MyFriendsVO">
+    select
+           users.id as friendUserId,
+           users.username as friendUsername,
+           users.face_image as friendFaceImage,
+           users.nickname as friendNickname
+    from my_friends
+           left join users on users.id = my_friends.my_friend_user_id
+    where my_friends.my_user_id = #{userId}
+  </select>
+
+</mapper>
